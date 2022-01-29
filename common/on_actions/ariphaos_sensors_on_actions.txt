@@ -1,0 +1,14 @@
+
+on_game_start = {
+	events = {
+		# Let other mods sense us
+		ariphaos_sensors.1
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		# Let other mods sense us
+		ariphaos_sensors.1
+	}
+}

@@ -1,0 +1,12 @@
+namespace = ariphaos_sensors
+
+# Allow other mods to sense us.
+event = {
+	id = ariphaos_sensors.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ariphaos_sensors_installed
+	}
+}

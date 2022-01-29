@@ -1,0 +1,37 @@
+
+
+ariphaos_sensors_jammer_starbase = {
+	icon = "GFX_starbase_communication_jammer"
+	construction_days = 720
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_ariphaos_sensor_jammer }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	show_in_tech = "tech_ariphaos_sensor_jammer"
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 150
+	}
+}

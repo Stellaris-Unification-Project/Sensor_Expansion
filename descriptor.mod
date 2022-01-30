@@ -5,5 +5,5 @@ tags={
 }
 name="Sensor Expansion"
 picture="thumbnail.png"
-supported_version="3.2.*"
+supported_version="3.2.2"
 remote_file_id="2002751329"

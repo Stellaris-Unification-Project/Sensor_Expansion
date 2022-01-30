@@ -62,7 +62,7 @@ spy_orb_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
@@ -98,7 +98,7 @@ spy_orb_0 = {
 					NOT = { exists = owner }
 					AND = {
 						exists = owner
-						NOT = { owner = { is_same_value = from } }
+						NOT = { is_owned_by = from }
 					}
 				}
 			}
@@ -107,10 +107,7 @@ spy_orb_0 = {
 		modifier = {
 			factor = 2.0
 			from = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}			
+				is_militarist = yes			
 			}
 		}
 	}
